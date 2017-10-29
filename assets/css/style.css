@@ -1,0 +1,40 @@
+body {
+	background-image: url("../images/darkness.png");
+}
+
+#container{
+/*border-image: url("../images/gaming-pattern.png");*/
+border-color: green;
+border-style: solid;
+border-width: 15px;
+margin: auto;
+max-width: 800px;
+height:200px;
+margin-top: 100px;
+padding: 30px;
+/*align-content: space-around;*/
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	color: lime;
+	text-shadow: 3px 2px green;
+	margin-bottom: 50px;
+	/*background-color: black;*/
+}
+
+#startButtonDiv{
+	text-align: center;
+}
+
+button{
+	width: 200px;
+	height: 80px;
+	font-size: 30px;
+	font-weight: bold;
+	color: lime;
+	background-color: black;
+	border-color: lime;
+	text-align: center;
+}
