@@ -1,15 +1,18 @@
 body {
 	background-image: url("../images/darkness.png");
+	color:yellow;
+	font-size: 35px;
+	font-weight: 35px;
 }
 
-#container{
+#mainContainer{
 /*border-image: url("../images/gaming-pattern.png");*/
 border-color: green;
 border-style: solid;
 border-width: 15px;
 margin: auto;
 max-width: 800px;
-height:200px;
+height: auto;
 margin-top: 100px;
 padding: 30px;
 /*align-content: space-around;*/
@@ -37,4 +40,21 @@ button{
 	background-color: black;
 	border-color: lime;
 	text-align: center;
+}
+
+#qContainer{
+	text-align: center;
+	margin:20px 0px;
+}
+
+.q	{
+	margin: 50px 0px;
+	padding: 20px 0px;
+	border-color: green;
+	border-style: solid;
+	border-width: 15px;
+}
+
+#doneButton{
+	margin-top: 35px;
 }

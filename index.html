@@ -6,22 +6,62 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 
     <title>Timed Trivia Game</title>
 
 </head>
 <body>
-	<div id="container">
-		<h1 id= "h1">Trivia Game</h1>
+	
+	<div id="mainContainer">
 
-		<div id="startButtonDiv">
-			<button>START</button>
+		<div id="startContainer">
+			<h1 id= "h1">Trivia Game</h1>
+
+			<div id="startButtonDiv">
+				<button id="startButton">START</button>
+			</div>
+		</div>
+
+		<div id="gameContainer">
+			
+			<div>
+				<h1 id="gameTimer">Time Remaining: 100 Seconds</h1>
+			</div>
+
+			<div id="qContainer">
+				
+				<form class="q" id="question1">
+					<h2>What do you call the small image icons used to express emotions or ideas in digital communication?</h2>
+					<br>
+				  <input type="radio" name="q1" value="Smiley"> Smiley
+				  <input type="radio" name="q1" value="Emoji"> Emoji
+				  <input type="radio" name="q1" value="Gif"> Gif
+				  <input type="radio" name="q1" value="Icon"> Icon
+				</form>
+
+				
+
+				
+
+				<button id="doneButton">DONE</button>
+			</div>
+		</div>
+
+		<div id="resultsContainer">
+
+			<h2 id = "done">All Done!</h2>
+			<br>
+
+			<h2>Correct Answers: <span id = "correctAnswers">0</span></h2>
+			<h2>Incorrect Answers: <span id = wrongAnswers>0</span></h2>
+			<h2>Unanswered: <span id = "unanswered">0</span></h2>
 		</div>
 
 	</div>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 </html>
