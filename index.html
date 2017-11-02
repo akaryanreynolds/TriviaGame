@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
     <title>Timed Trivia Game</title>
 
@@ -29,6 +31,20 @@
 			</div>
 
 			<div id="qContainer">
+<!-- 
+				<h2>What do you call the small image icons used to express emotions or ideas in digital communication?</h2>
+					<br>
+
+				<button class="answerButtons" id="Smiley"> Smiley</button>
+				<br>
+				<button class="answerButtons" id="Emoji"> Emoji</button>
+				<br>
+				<button class="answerButtons" id="Gif"> Gif</button>
+				<br>
+				<button class="answerButtons" id="Icon"> Icon</button>
+				<br> -->
+
+
 				
 				<form class="q" id="question1">
 					<h2>What do you call the small image icons used to express emotions or ideas in digital communication?</h2>
@@ -38,10 +54,6 @@
 				  <input type="radio" name="q1" value="Gif"> Gif
 				  <input type="radio" name="q1" value="Icon"> Icon
 				</form>
-
-				
-
-				
 
 				<button id="doneButton">DONE</button>
 			</div>
@@ -55,13 +67,12 @@
 			<h2>Correct Answers: <span id = "correctAnswers">0</span></h2>
 			<h2>Incorrect Answers: <span id = wrongAnswers>0</span></h2>
 			<h2>Unanswered: <span id = "unanswered">0</span></h2>
+
+			<div id="replayButtonDiv">
+				<button id="replayButton">Replay</button>
+			</div>	
 		</div>
 
 	</div>
-
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-
 </body>
 </html>

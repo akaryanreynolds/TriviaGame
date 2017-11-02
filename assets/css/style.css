@@ -27,8 +27,13 @@ h1{
 	/*background-color: black;*/
 }
 
-#startButtonDiv{
+#startButtonDiv, #replayButtonDiv{
 	text-align: center;
+}
+
+.answerButtons{
+	width: 600px;
+	margin-bottom: 20px;
 }
 
 button{
