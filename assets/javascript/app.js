@@ -1,7 +1,7 @@
 // Varables
 // ==================================================================================
 // Setting the time of game play
-var timer = 10;
+var timer = 100;
 var intervalId;
 
 // Defining the variables that will be used to show the game score.
@@ -36,14 +36,14 @@ $('#startButton').on("click", function() {
 
 // Done button to complete game and take you to the results screen
 $("#doneButton").on("click", function(){
-	timer = 10;
+	timer = 100;
 	stop();
 	gameEnd();
 });
 
 // Reply button that takes you back to the start screen
 $('#replayButton').on("click", function () {
-	timer = 10;
+	timer = 100;
 	correctCount = 0;
 	wrongCount = 0;
 	unansweredCount = 0;
@@ -51,6 +51,9 @@ $('#replayButton').on("click", function () {
 	$('#gameContainer').hide();
 	$('#resultsContainer').hide();
 })
+
+
+
 // ==================================================================================
 // END Click Functions
 
@@ -103,6 +106,120 @@ if(q1 == undefined){
 	else{
 		wrongCount++;
 	}
+
+var q2 = $('input:radio[name="q2"]:checked').val();
+
+if(q2 == undefined){
+		unansweredCount++;
+	}
+	else if(q2 == "Liquid Crystal Display"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+var q3 = $('input:radio[name="q3"]:checked').val();
+
+if(q3 == undefined){
+		unansweredCount++;
+	}
+	else if(q3 == "Read Only Memory"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q4 = $('input:radio[name="q4"]:checked').val();
+
+if(q4 == undefined){
+		unansweredCount++;
+	}
+	else if(q4 == "Kodak"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q5 = $('input:radio[name="q5"]:checked').val();
+
+if(q5 == undefined){
+		unansweredCount++;
+	}
+	else if(q5 == "Japan"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q6 = $('input:radio[name="q6"]:checked').val();
+
+if(q6 == undefined){
+		unansweredCount++;
+	}
+	else if(q6 == "Red, Green and Blue"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q7 = $('input:radio[name="q7"]:checked').val();
+
+if(q7 == undefined){
+		unansweredCount++;
+	}
+	else if(q7 == "Websites"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q8 = $('input:radio[name="q8"]:checked').val();
+
+if(q8 == undefined){
+		unansweredCount++;
+	}
+	else if(q8 == "1993"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+	var q9 = $('input:radio[name="q9"]:checked').val();
+
+if(q9 == undefined){
+		unansweredCount++;
+	}
+	else if(q9 == "Laugh Out Loud"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+var q10 = $('input:radio[name="q10"]:checked').val();
+
+if(q10 == undefined){
+		unansweredCount++;
+	}
+	else if(q10 == "1976"){
+		correctCount++;
+	}
+	else{
+		wrongCount++;
+	}
+
+
+
+
+
+
 $('#gameContainer').hide();
 $('#resultsContainer').show();	
 
