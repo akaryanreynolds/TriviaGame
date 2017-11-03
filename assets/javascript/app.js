@@ -216,10 +216,6 @@ if(q10 == undefined){
 	}
 
 
-
-
-
-
 $('#gameContainer').hide();
 $('#resultsContainer').show();	
 
